@@ -1,10 +1,12 @@
 <?php
 
-
 namespace App;
 
+use Illuminate\Database\Eloquent\Model;
 
-class Video extends Eloquent
+class Video extends Model
 {
-    protected $fillable = [];
+    protected $fillable = [
+        'title', 'description', 'category', 'private'
+    ];
 }

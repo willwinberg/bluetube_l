@@ -20,6 +20,15 @@ class User extends Authenticatable
     ];
 
     /**
+     * The model's default values for attributes.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'avatar' => '/img/location.img',
+    ];
+
+    /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
